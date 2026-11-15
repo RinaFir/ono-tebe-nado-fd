@@ -1,1 +1,1 @@
-https://github.com/RinaFir/ono-tebe-nado
+https://github.com/RinaFir/ono-tebe-nado-fd
