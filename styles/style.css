@@ -90,11 +90,12 @@
   background-image: url("../images/cover.jpg");
   background-position: center;
   background-size: cover;
+  z-index: 0;
 }
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: -1;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -155,13 +156,14 @@
   /*position: absolute;
   top: 656px;
   left: 50px;*/
+  position: relative;
   margin: 106px auto 0;
   z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  min-height: 51px;
+  min-height: 51px; /*это не ограничение высоты, а ограничение по сжатию, я не хочу его удалять...*/
 }
 
 .cover__description-text {
@@ -187,7 +189,8 @@
   color: #fff;
   background-color: transparent;
   text-decoration: none;
-  line-height: 22px;
+  line-height: 22px; 
+  font-size: 22px;
 }
 
 /*Блок с карточками лотов*/
@@ -215,6 +218,7 @@
 .card {
   position: relative;
 
+  z-index: 0;
   display: flex;
   flex-direction: column;
 
@@ -261,7 +265,7 @@
   color: #fff;
 
   z-index: 6;
-  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 22px;
 
@@ -280,7 +284,7 @@
   padding-bottom: 55px;
   color: #fff;
 
-  font-family: Raleway;
+  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
@@ -293,7 +297,7 @@
   margin-top: 30px;
   margin-left: calc((100% - 1052px) / 2 + 40px);
 
-  font-family: Raleway;
+  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-transform: lowercase;
@@ -336,8 +340,8 @@
 }
 .about__column {
   display: grid;
-  grid-template-rows: 240px auto;
-  row-gap: 24px;
+  /*grid-template-rows: 240px auto;*/
+  row-gap: 4px;
   margin-right: 24px;
 }
 
@@ -347,6 +351,7 @@
   line-height: 1.2; /*интервал в 120% из фигмы*/
 
   margin: 0;
+  padding: 96px 0;
   font-size: 40px;
 }
 
@@ -360,13 +365,13 @@
   font-weight: 400;
   font-size: 20px;
 
-  margin: -20px 24px 0px 0px;
+  margin: 0px 24px 0px 0px;
 }
 /*подвал*/
 .footer {
   margin: 180px auto 0;
   width: 1100px;
-  min-height: 180px;
+  min-height: 180px; /*минимальня высота же не ограничивает высоту а просто не позволяет элементу схлопнуться...*/
 
   display: grid;
   grid-template-columns: 264.57px 163.9px 240px;
