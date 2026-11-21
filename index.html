@@ -14,13 +14,13 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
-            <a class="link__active" href="home">главная</a>
+            <a class="header__links link__active" href="home">главная</a>
           </li>
           <li>
             <a class="header__links" href="lot">посмотреть лоты</a>
           </li>
           <li>
-            <a class="header__links" href="about">об аукционе</a>
+            <a class="header__links" href="about">об аукционе</a> <!-- header__links нужны каждому пункту списка, т.к. это задаёт правильное позиционирование  -->
           </li>
         </ul>
       </nav>
@@ -28,13 +28,7 @@
         <img
           class="header__logo-image header__logo-image_over"
           src="./images/logo-black.svg"
-          alt="Оно тебе надо"
-        />
-        <img
-          class="header__logo-image"
-          src="./images/logo-white.svg"
-          alt="Оно тебе надо"
-        />
+          alt="Оно тебе надо"/>
       </a>
       <address class="address header__adress">
         <a href="tel:+99995555555">+9 999 555 5555 </a>

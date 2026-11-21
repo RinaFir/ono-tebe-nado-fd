@@ -60,7 +60,7 @@
 .address {
   /*padding-bottom: 2px;*/
   font-size: 18px;
- /*border-bottom: 1px solid;*/
+  /*border-bottom: 1px solid;*/
   font-style: normal;
   line-height: 24px;
   text-decoration: none;
@@ -69,7 +69,7 @@
 .header__adress {
   width: 240px;
   /*min-height: 98px;*/
-  
+
   display: flex;
   flex-direction: column;
   justify-self: end;
@@ -80,7 +80,10 @@
 /*Блок с надписью "ОНО ТЕБЕ НАДО"*/
 
 /*заглавные буквы на странице*/
-.cover, .lots_heading, .card__title, .about__title {
+.cover,
+.lots_heading,
+.card__title,
+.about__title {
   text-transform: uppercase;
 }
 
@@ -103,12 +106,13 @@
   position: relative;
   z-index: 5;
   width: 1000px;
- /* height: 385px; */
+  /* height: 385px; */
   margin: 0 auto;
   padding-top: 165px;
   color: #fff;
 
-  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-family:
+    Raleway, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 100px;
 
@@ -151,7 +155,6 @@
   letter-spacing: normal;
 }
 
-
 .cover__description {
   /*position: absolute;
   top: 656px;
@@ -163,7 +166,6 @@
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  min-height: 51px; /*это не ограничение высоты, а ограничение по сжатию, я не хочу его удалять...*/
 }
 
 .cover__description-text {
@@ -175,8 +177,8 @@
   text-transform: uppercase;
 
   /*word-spacing: 15px; - не дало нужного эффекта, расстояния между текстовыми фрагментами разное*/
-  text-align-last: justify;      
-  text-align: justify;      
+  text-align-last: justify;
+  text-align: justify;
 }
 
 .bet-button {
@@ -189,7 +191,7 @@
   color: #fff;
   background-color: transparent;
   text-decoration: none;
-  line-height: 22px; 
+  line-height: 22px;
   font-size: 22px;
 }
 
@@ -211,7 +213,7 @@
   flex-wrap: wrap;
   gap: 25px;
   width: 1052px;
-  margin: 27px auto 0; 
+  margin: 27px auto 0;
   list-style: none;
 }
 
@@ -236,17 +238,14 @@
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  
 }
 
 .card_type_book {
- background-image: url("../images/card-lot-02.jpg");
- 
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
- 
 }
 
 .card-link {
@@ -257,7 +256,7 @@
 
 .card__title {
   position: relative;
-  
+
   margin-top: 48px;
   width: 254px;
   margin-left: 40px;
@@ -265,7 +264,7 @@
   color: #fff;
 
   z-index: 6;
-  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Raleway, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 22px;
 
@@ -284,7 +283,8 @@
   padding-bottom: 55px;
   color: #fff;
 
-  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:
+    Raleway, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
@@ -293,11 +293,11 @@
 .lots__look-more-link {
   display: block;
   width: 192px;
-  /*min-height: 25px;*/
+  
   margin-top: 30px;
   margin-left: calc((100% - 1052px) / 2 + 40px);
 
-  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Raleway, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-transform: lowercase;
@@ -325,7 +325,7 @@
 
   width: 240px;
   height: 240px;
-  
+
   border-radius: 50%;
   background-color: black;
 }
@@ -336,11 +336,9 @@
   width: 148px;
   height: 114px;
   margin: auto;
-  
 }
 .about__column {
   display: grid;
-  /*grid-template-rows: 240px auto;*/
   row-gap: 4px;
   margin-right: 24px;
 }
@@ -361,7 +359,8 @@
   row-gap: calc(294px - (150px + 120px));
   color: black;
 
-  font-family: Raleway, Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-family:
+    Raleway, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
 
@@ -371,20 +370,18 @@
 .footer {
   margin: 180px auto 0;
   width: 1100px;
-  min-height: 180px; /*минимальня высота же не ограничивает высоту а просто не позволяет элементу схлопнуться...*/
 
+  margin-bottom: 76px;
   display: grid;
   grid-template-columns: 264.57px 163.9px 240px;
   justify-content: space-between;
   align-items: start;
-  padding: 0 50px; 
+  padding: 0 50px;
   box-sizing: border-box;
 }
 
 .footer__menu {
   grid-column: 2 / 3;
-  /*height: 64px;*/
-
 }
 
 .footer__menu-list {
@@ -398,7 +395,7 @@
   text-transform: lowercase;
 }
 .footer__menu-list li {
-  margin: 0; 
+  margin: 0;
 }
 
 .footer__social-list {
